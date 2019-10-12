@@ -9,8 +9,8 @@ class Song
     
   @@all = []
   
-  def self.find_by_name(name)
-    all.
+  def self.find_by_name(fname)
+    all.detect {|song| song.name == fname}
   end
   
   def self.all
