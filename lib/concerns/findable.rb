@@ -1,11 +1,11 @@
 module Concerns::Findable
 
-  def self.find_by_name(fname)
-    all.detect {|song| self.name == fname}
+  def find_by_name(fname)
+    self.all.detect {|song| self.name == fname}
   end
   
-  def self.find_or_create_by_name(fname)
-    find_by_name(fname) || create(fname)
+  def find_or_create_by_name(fname)
+    self.find_by_name(fname) || self.create(fname)
   end
   
 end
