@@ -9,6 +9,10 @@ class Song
     
   @@all = []
   
+  def self.find_by_name(this_song)
+    all.select(this_song)
+  end
+  
   def self.all
     @@all
   end
