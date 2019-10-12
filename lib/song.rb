@@ -10,7 +10,7 @@ class Song
   @@all = []
   
   def self.find_by_name(name)
-    all.match{ |s| s.name == name }
+    name == all.match
   end
   
   def self.all
